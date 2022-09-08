@@ -22,6 +22,7 @@
 # Defaults to a resolution of 640x480 px and a framerate of 10 fps
 #
 #camera_usb_options="-r 640x480 -f 10"
+camera_usb_options="-r 640x480"
 
 ### Additional webcam devices known to cause problems with -f
 #
@@ -46,8 +47,7 @@
 #
 #   additional_brokenfps_usb_devices=("aabb:ccdd" "aabb:eeff")
 #
-#
-#additional_brokenfps_usb_devices=()
+#additional_brokenfps_usb_devices=("090c:f37d")
 
 ### Additional options to supply to MJPG Streamer for the RasPi Cam
 #
@@ -70,6 +70,8 @@
 #
 #camera_http_webroot="./www-mainsail"
 #camera_http_options="-n"
+#camera_http_webroot="./www-mainsail"
+#camera_http_options="-n -p 8081"
 
 ### EXPERIMENTAL
 # Support for different streamer types.
