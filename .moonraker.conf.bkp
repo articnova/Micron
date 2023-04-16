@@ -22,10 +22,12 @@ cors_domains =
 	https://app.fluidd.xyz
 	http://app.fluidd.xyz
 	http://192.168.1.88
+	https://192.168.1.88
 
 [database]
 
 [file_manager]
+enable_object_processing = True
 
 [octoprint_compat]
 
@@ -46,4 +48,12 @@ type = git_repo
 path = ~/crowsnest
 origin = https://github.com/mainsail-crew/crowsnest.git
 install_script = tools/install.sh
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
 
